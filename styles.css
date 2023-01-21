@@ -149,6 +149,13 @@ button {
 
 }
 
+.left_bottom img {
+    margin-top: 13px;
+    margin-left: 5px;
+    /* height: 60px;
+    width: 60px; */
+}
+
 .btns {
     width: 350px;
     display: flex;
@@ -222,7 +229,7 @@ button {
     font-family: 'Inconsolata';
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 31px;
     line-height: 42px;
     letter-spacing: 0.01em;
 

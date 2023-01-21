@@ -15,11 +15,6 @@ function increment() {
 }
 
 
-// function reset() {
-//     data = 0;
-//     document.getElementById("counting").innerText = data;
-// }
-
 function decrement() {
     data = data - 1;
     data = data < 0 ? 0 : data;
@@ -35,12 +30,9 @@ function myFunc(a) {
     tip = Number(text_val) * Number(a/100);
     final_val = Number(text_val) + Number(tip);
     total_pp = Number(final_val) / Number(data);
-    total_pp.toFixed(2);
+    fixed_pp = total_pp.toFixed(2);
     tip_pp = Number(tip) / Number(data);
-    tip_pp.toFixed(2);
-
-    // console.log(final_val);
-    // console.log(total_pp);
+    tFixed_pp = tip_pp.toFixed(2);
 
     return text_val, total_pp;
 
@@ -49,34 +41,24 @@ function myFunc(a) {
 let ab = document.getElementById('display_rText-2');
 let cd = document.getElementById('display_rText');
 let reset = document.getElementById('reset');
-let i = 0;
 
 function btn() {
 
-    ab.innerHTML = '₹' + total_pp;
-    cd.innerHTML = '₹' + tip_pp;
-    
-    // console.log(reset);
-    // i++ ;
-    // console.log(i);
-    // if(reset.innerHTML == "RESET") {
-    //     document.getElementById('myText').value = 0;
-    //     ab.innerHTML = 0;
-    //     cd.innerHTML = 0;
-    //     document.getElementById("counting").innerHTML = 0;
-    //     // reset.innerHTML = "GENERATE";
-    // }
+    // console.log(reset.innerHTML);
 
-    // if(i/2 == 1) {
-    //     reset.innerHTML = "GENERATE";
-    // } else {
-    //     reset.innerHTML = "RESET";
-    // }
-    
+    ab.innerHTML = '₹' + fixed_pp;
+    cd.innerHTML = '₹' + tFixed_pp;
 
-    // console.log(ab)
-    // console.log(cd);
-    // console.log('button clocked');
+    if(reset.innerHTML == "RESET") {
+        document.getElementById('myText').value = 0;
+        ab.innerHTML = 0;
+        cd.innerHTML = 0;
+        document.getElementById("counting").innerHTML = 0;
+        data = 0;
+        reset.innerHTML = "GENERATE";
+    } else {
+        reset.innerHTML = "RESET";
+    }
 }
 
 
