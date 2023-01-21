@@ -30,9 +30,9 @@ function myFunc(a) {
     tip = Number(text_val) * Number(a/100);
     final_val = Number(text_val) + Number(tip);
     total_pp = Number(final_val) / Number(data);
-    fixed_pp = total_pp.toFixed(2);
+    fixed_pp = total_pp.toFixed(1);
     tip_pp = Number(tip) / Number(data);
-    tFixed_pp = tip_pp.toFixed(2);
+    tFixed_pp = tip_pp.toFixed(1);
 
     return text_val, total_pp;
 
