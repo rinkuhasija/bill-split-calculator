@@ -53,7 +53,7 @@ function btn() {
         document.getElementById('myText').value = 0;
         ab.innerHTML = 0;
         cd.innerHTML = 0;
-        document.getElementById("counting").innerHTML = 0;
+        document.getElementById("counting").innerHTML = 1;
         data = 1;
         reset.innerHTML = "GENERATE";
     } else {
