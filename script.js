@@ -1,4 +1,4 @@
-var data = 0;
+var data = 1;
 var text_val = 1;
 var tip;
 var final_val;
@@ -54,7 +54,7 @@ function btn() {
         ab.innerHTML = 0;
         cd.innerHTML = 0;
         document.getElementById("counting").innerHTML = 0;
-        data = 0;
+        data = 1;
         reset.innerHTML = "GENERATE";
     } else {
         reset.innerHTML = "RESET";
